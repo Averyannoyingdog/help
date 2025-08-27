@@ -3,6 +3,7 @@ import com.AveryannoyingModder.MainModFolder.RiverCraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -22,8 +23,14 @@ public class ModItems {
     public static final DeferredItem<Item> RIVERITE = ITEMS.registerItem("riverite",
             Item::new, new Item.Properties());
 
-    public static final DeferredItem<Item> RIVERPICKAXE = ITEMS.registerItem("riverpickaxe",
+    public static final DeferredItem<PickaxeItem> RIVERPICKAXE = ITEMS.register("riverpickaxe",
+            () -> new PickaxeItem(ModToolTiers.RIVERITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.RIVERITE,5,-3))));
+
+
+    public static final DeferredItem<Item> RIVERHAMMER = ITEMS.registerItem("river_hammer",
             Item::new, new Item.Properties());
+
 
     //BLOCKS is a DeferredRegister.Blocks
     public static final DeferredBlock<Block> MY_BETTER_BLOCK = BLOCKS.register(
@@ -36,8 +43,6 @@ public class ModItems {
                     .lightLevel(state -> 7)
             ));
 
-    public static final DeferredItem<Item> RIVERHAMMER = ITEMS.registerItem("river_hammer",
-            Item::new, new Item.Properties());
 
     public static final DeferredItem<Item> RIVERMASK = ITEMS.registerItem("river_mask",
             Item::new, new Item.Properties());
