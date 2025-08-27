@@ -1,6 +1,7 @@
 package com.AveryannoyingModder.MainModFolder.Item;
 
 import com.AveryannoyingModder.MainModFolder.RiverCraft;
+import com.AveryannoyingModder.MainModFolder.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -21,6 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RIVERITE);
                         output.accept(ModItems.RIVERPICKAXE);
+                        output.accept(ModBlocks.RIVERITEORE);
 
                     }).build());
 

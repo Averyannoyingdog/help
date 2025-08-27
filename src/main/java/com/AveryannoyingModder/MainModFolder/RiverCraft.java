@@ -2,6 +2,7 @@ package com.AveryannoyingModder.MainModFolder;
 
 import com.AveryannoyingModder.MainModFolder.Item.ModCreativeModeTabs;
 import com.AveryannoyingModder.MainModFolder.Item.ModItems;
+import com.AveryannoyingModder.MainModFolder.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -48,6 +49,7 @@ public class RiverCraft {
         modEventBus.addListener(this::addCreative);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

@@ -36,7 +36,6 @@ public class ModItems {
     public static final DeferredBlock<Block> MY_BETTER_BLOCK = BLOCKS.register(
             "river_ore",
             registryName -> new Block(BlockBehaviour.Properties.of()
-//                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
                     .destroyTime(2.0f)
                     .explosionResistance(10.0f)
                     .sound(SoundType.GRAVEL)
