@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RIVERITE);
                         output.accept(ModItems.CASH);
+                        //when ever RIVERITEORE is added to the creative inventory the game crashes when you try and open said inventory
+//                        output.accept(ModItems.RIVERITEORE);
 
                     }).build());
 
