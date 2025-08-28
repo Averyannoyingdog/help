@@ -21,17 +21,23 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.rivercraft.river_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RIVERITE);
-                        output.accept(ModItems.RIVERPICKAXE);
-                        output.accept(ModBlocks.RIVERITEORE);
+                        output.accept(ModItems.CASH);
 
                     }).build());
 
+
+
+
     public static final Supplier<CreativeModeTab> RIVER_TOOLS_TAB = CREATIVE_MODE_TAB.register("river_block_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RIVERHAMMER.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RIVERPICKAXE.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(RiverCraft.MODID, "bismuth_items_tab"))
                     .title(Component.translatable("creativetab.rivercraft.river_tools"))
                     .displayItems((itemDisplayParameters, output) -> {
-
+                        output.accept(ModItems.RIVERSWORD);
+                        output.accept(ModItems.RIVERPICKAXE);
+                        output.accept(ModItems.RIVERSHOVEL);
+                        output.accept(ModItems.RIVERHOE);
+                        output.accept(ModItems.RIVERAXE);
 
                     }).build());
 

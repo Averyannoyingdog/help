@@ -20,8 +20,8 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<Block> RIVERITEORE = BLOCKS.register(
-            "river_ore",
-            registryName -> new Block(BlockBehaviour.Properties.of()
+            "riverore",
+            () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .explosionResistance(10.0f)
                     .sound(SoundType.GRAVEL)

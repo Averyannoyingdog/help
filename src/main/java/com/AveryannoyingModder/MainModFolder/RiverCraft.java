@@ -49,7 +49,7 @@ public class RiverCraft {
         modEventBus.addListener(this::addCreative);
 
         ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+//        ModBlocks.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

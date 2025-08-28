@@ -1,10 +1,19 @@
 {
   "item.rivercraft.riverite": "Riverite",
-  "item.rivercraft.riverpickaxe": "River Pickaxe",
   "item.rivercraft.river_ore": "River Ore",
   "item.rivercraft.river_mask": "River Mask",
-  "creativetab.rivercraft.river_items": "RiverCraft Items",
-  "creativetab.rivercraft.river_tools": "RiverCraft Item"
+  "item.rivercraft.cash": "5 Bucks",
 
+  "item.rivercraft.riversword": "River Sword",
+  "item.rivercraft.riverpickaxe": "River Pickaxe",
+  "item.rivercraft.riveraxe": "River Axe",
+  "item.rivercraft.rivershovel": "River Shovel",
+  "item.rivercraft.riverhoe": "River Hoe",
+
+  "creativetab.rivercraft.river_items": "RiverCraft Items",
+  "creativetab.rivercraft.river_tools": "RiverCraft Item",
+
+
+  "block.rivercraft.riverore": "Block of River Ore"
 
 }

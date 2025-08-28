@@ -8,7 +8,7 @@ import net.neoforged.neoforge.common.SimpleTier;
 public class ModToolTiers {
 
     public static final Tier RIVERITE = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_RIVERITE_TOOL,
-            512, 7f, 100f, 18, () -> Ingredient.of(ModItems.RIVERITE));
+            512, 1f, 1f, 18, () -> Ingredient.of(ModItems.RIVERITE));
 
 
 }
