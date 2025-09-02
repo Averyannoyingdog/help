@@ -48,6 +48,7 @@ public class RiverCraft {
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 

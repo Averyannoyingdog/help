@@ -22,7 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RIVERITE);
                         output.accept(ModItems.CASH);
-                        //output.accept(ModBlocks.RIVERITEORE);
+//                        output.accept(ModBlocks.RIVERITEORE);
                         //when ever RIVERITEORE is added to the creative inventory the game crashes when you try and open said inventory
 //                        output.accept(ModItems.RIVERITEORE);
 
@@ -41,6 +41,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RIVERSHOVEL);
                         output.accept(ModItems.RIVERHOE);
                         output.accept(ModItems.RIVERAXE);
+                        output.accept(ModItems.RIVER_HELMET);
 
                     }).build());
 

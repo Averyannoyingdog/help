@@ -34,7 +34,7 @@ public class ModItems {
 
     //BLOCKS is a DeferredRegister.Blocks
 //    public static final DeferredBlock<Block> RIVERITEORE = BLOCKS.register(
-//            "riverore.json",
+//            "riverore",
 //            registryName -> new Block(BlockBehaviour.Properties.of()
 //                    .destroyTime(2.0f)
 //                    .explosionResistance(10.0f)
@@ -72,6 +72,10 @@ public class ModItems {
                     .attributes(HoeItem.createAttributes(ModToolTiers.RIVERITE, 4,2))));
 
 
+
+    public static final  DeferredItem<ArmorItem> RIVER_HELMET = ITEMS.register("river_helmet",
+            () -> new ArmorItem(ModArmorMaterials.RIVERITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
 
 
     public static void register(IEventBus EventBus)
