@@ -42,7 +42,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RIVERHOE);
                         output.accept(ModItems.RIVERAXE);
                         output.accept(ModItems.RIVER_HELMET);
-
+                        output.accept(ModItems.RIVER_CHESTPLATE);
+                        output.accept(ModItems.RIVER_LEGGINGS);
+                        output.accept(ModItems.RIVER_BOOTS);
                     }).build());
 
 

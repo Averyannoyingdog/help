@@ -57,7 +57,7 @@ public class ModItems {
 
     public static final DeferredItem<PickaxeItem> RIVERPICKAXE = ITEMS.register("riverpickaxe",
             () -> new PickaxeItem(ModToolTiers.RIVERITE, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.RIVERITE,5,-3))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.RIVERITE,2,-3))));
 
     public static final DeferredItem<AxeItem> RIVERAXE = ITEMS.register("riveraxe",
             () -> new AxeItem(ModToolTiers.RIVERITE, new Item.Properties()
@@ -76,6 +76,20 @@ public class ModItems {
     public static final  DeferredItem<ArmorItem> RIVER_HELMET = ITEMS.register("river_helmet",
             () -> new ArmorItem(ModArmorMaterials.RIVERITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+
+    public static final  DeferredItem<ArmorItem> RIVER_LEGGINGS = ITEMS.register("river_leggings",
+            () -> new ArmorItem(ModArmorMaterials.RIVERITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+
+
+    public static final  DeferredItem<ArmorItem> RIVER_CHESTPLATE = ITEMS.register("river_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.RIVERITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+
+
+    public static final  DeferredItem<ArmorItem> RIVER_BOOTS = ITEMS.register("river_boots",
+            () -> new ArmorItem(ModArmorMaterials.RIVERITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
 
 
     public static void register(IEventBus EventBus)
