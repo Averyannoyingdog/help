@@ -48,6 +48,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> CASH = ITEMS.registerItem("cash",
             Item::new, new Item.Properties());
+    //
 
 
 
